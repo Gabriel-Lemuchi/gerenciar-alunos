@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  color: white;
+  font-size: 2px;
+}
+p{
+  color: grey;
+}
+body{
+  background-color: rgb(230, 230, 230);
+}
+nav{
+  margin-bottom: 60px;
+}
+.nav-wrapper{
+  background-color: rgb(9, 0, 184);
+}
+.brand-logo{
+  margin-left: 30px;
+}
+#cadastrar:hover{
+  background-color: rgb(59, 59, 59);
+}
+#listar:hover{
+  background-color: rgb(59, 59, 59);
+}
+#lixeira:hover{
+  background-color: rgb(59, 59, 59);
+}
+.container{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  min-height: 480px;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: rgb(9, 0, 184);
+  margin-top: 30px;
+  box-shadow: 2px 2px rgb(24, 24, 24);
+}
+.row{
+  margin-top: 10px;
+}
+.input-field{
+  color: black;
+}
+#chk{
+  display: flex;
+  margin-bottom: 50px;
+}
+#chk > div{
+  margin-right: 200px;
+}
+#submit{
+  padding: 10px 20px;
+}
+#submit:hover{
+  background-color: grey;
+  cursor: pointer;
+}
+.collapsible-header{
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+.collapsible-body{
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  min-height: 20px;
+}
+.collapsible-body > button{
+ margin-right: 5px;
+}
+input{
+  color: white;
+}
+
+@media(max-width: 1400px){
+
+}
+@media(max-width: 900px){
+  nav{
+    margin-bottom: 180px;
+  }
+  .nav-wrapper{
+    flex-wrap: wrap;
+  }
+  .brand-logo{
+    float:left;
+  }
+  li{
+    width: 100%;
+  }
+}
+@media(max-width: 600px){
+
+}

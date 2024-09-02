@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cadastramento de Alunos</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="img/ifsemg.png" width="77px"></a>
+      <ul id="nav-mobile" class="right">
+        <li id="cadastrar"><a href="#">Cadastrar</a></li>
+        <li id="listar"><a href="#">Listar</a></li>
+        <li id="lixeira"><a href="#">Lixeira</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container" id="cadastro">
+      <h1>Cadastro</h1>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="nome" type="text" class="validate">
+              <label for="nome">Nome</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="idade" type="text" class="validate">
+              <label for="idade">Idade</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="curso" type="text" class="validate">
+              <label for="curso">Curso</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="cep" type="text" class="validate">
+              <label for="cep">Cep</label>
+            </div>
+          </div>
+        </div>
+        <div id="chk">
+         <div>
+            <p>Turno:
+              <label>
+                <input name="turno" class="turno" id="manha" type="radio" />
+                <span>Manhã</span>
+              </label>
+              <label>
+                <input name="turno" class="turno" id="tarde" type="radio" />
+                <span>Tarde</span>
+              </label>
+              <label>
+                <input name="turno" class="turno" id="noite" type="radio" />
+                <span>Noite</span>
+              </label>
+            </p>
+          </div>
+          <div>
+            <p>Matriculado:
+              <label>
+                <input name="mat" class="mat" id="sim" type="radio" />
+                <span>Sim</span>
+              </label>
+              <label>
+                <input name="mat" class="mat" id="nao" type="radio" />
+                <span>Não</span>
+              </label>
+          </div>
+        </div>
+        <button id="submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container" id="listagem">
+      <h1>Listagem</h1>
+      <button id="Ocultar1">Ocultar</button>
+      <button id="Mostrar1">Atualizar</button>
+      <div id="lista_aluno">
+      </div>
+    </div>
+
+    <div class="container" id="div_lixeira">
+      <h1>Lixeira</h1>
+      <button id="Ocultar2">Ocultar</button>
+      <button id="Mostrar2">Atualizar</button>
+      <button id="esvaziar">Esvaziar</button>
+      <div id="lista_lixeira">
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });</script>
+</body>
+</html>
