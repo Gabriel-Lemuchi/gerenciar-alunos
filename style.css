@@ -78,24 +78,3 @@ nav{
 input{
   color: white;
 }
-
-@media(max-width: 1400px){
-
-}
-@media(max-width: 900px){
-  nav{
-    margin-bottom: 180px;
-  }
-  .nav-wrapper{
-    flex-wrap: wrap;
-  }
-  .brand-logo{
-    float:left;
-  }
-  li{
-    width: 100%;
-  }
-}
-@media(max-width: 600px){
-
-}

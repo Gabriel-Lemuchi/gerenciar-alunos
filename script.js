@@ -73,7 +73,7 @@ var excluidos = {
             'localidade': 'Ali',
             'UF': 'MG',
             'turno': 'Noite', 'matriculado': 'Sim'},
-        {'nome': 'Eliézer Massaro Pinto', 'idade': 21, 'curso': 'Téc. Informática',
+        {'nome': 'Eliézer Massaro', 'idade': 21, 'curso': 'Téc. Informática',
             'logradouro': 'Vila do Chaves',
             'bairro': 'Bairro Quadrado',
             'localidade': 'Acolá',
